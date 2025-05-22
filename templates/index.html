@@ -20,7 +20,6 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
-        <a href="{{ url_for('download_resume') }}">Download Resume</a>
     </nav>
 
     <section id="about">
@@ -30,14 +29,81 @@
 
     <section id="experience">
         <h2>Experience</h2>
-        <p>Placeholder for Experience section. Detail your work experience here.</p>
-        <!-- Add more experience items as needed -->
+        <p class="resume-text">For details, here's my <a href="{{ url_for('download_resume') }}" class="resume-link">resume</a></p>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title-company">
+                    <h3>Research Assistant</h3>
+                    <p class="company-info">Simon Fraser University</p>
+                </div>
+                <p class="date">2024 - Present</p>
+            </div>
+            I’m working on ways to share user network data without risking sensitive info.
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title-company">
+                    <h3>Teaching Assistant</h3>
+                    <p class="company-info">Simon Fraser University/p>
+                </div>
+                <p class="date">2024 - Present</p>
+            </div>
+            I'm mentoring diverse students in understanding statistics and analyzing data using R.
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title-company">
+                    <h3>Machine Learning Engineer</h3>
+                    <p class="company-info">Momo - Top 1 fintech company in Vietnam</p>
+                </div>
+                <p class="date">2021 - 2023</p>
+            </div>
+            I built a real-time account takeover prediction system that reduced fraud by 50% and engineered data pipelines processing over 1TB daily, cutting query costs by 80%. I also collaborated with cross-functional teams to analyze behavior across 30M users, run A/B tests, and develop insightful dashboards.
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title-company">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <p class="company-info">University of Toledo</p>
+                </div>
+                <p class="date">2020 - 2021</p>
+            </div>
+            I studied how interstate disputes form network patterns and shared my findings at Complex Networks 2021. I also co-developed DyNetworkX, a Python package for dynamic network data, and co-led a hands-on tutorial for it at SBP-BRiMS 2021.
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title-company">
+                    <h3>Dev-Ops Intern</h3>
+                    <p class="company-info">Crown Equipment Corporation</p>
+                </div>
+                <p class="date">2020 - 2020</p>
+            </div>
+            I improved productivity of the development team by maintaining CI/CD pipelines and managing AWS resources.
+        </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <p>Placeholder for Education section. List your educational background here.</p>
-        <!-- Add more education items as needed -->
+        
+        <div class="education-item">
+            <h3>Master of Science in Statistics</h3>
+            <p class="institution">Simon Fraser University - Canada</p>
+            <p class="gpa">GPA: 4.04/4.33</p>
+            <p>Topics covered: Generalized Linear Models, Experimental Design, Statistical Computing, Statistical Theory</p>
+        </div>
+        
+        <div class="education-item">
+            <h3>Bachelor of Science in Data Science with Honors, Economics Minor</h3>
+            <p class="institution">University of Toledo - United States</p>
+            <p class="gpa">GPA: 3.98/4.00</p>
+            <p class="awards">Awards: Summa Cum Laude, President's List, International Student Scholarship</p>
+            <p class="publication">Publication: Do, H. N., & Xu, K. S. (2022). <br>Analyzing escalations in militarized interstate disputes using motifs in temporal networks.<br>Complex Networks and Their Applications X, 527–538</p>
+        </div>
     </section>
 
     <section id="skills">
@@ -47,7 +113,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 My Name. All rights reserved.</p>
+        <p>&copy; 2024 Hung Do. All rights reserved.</p>
     </footer>
 </body>
 </html> 
