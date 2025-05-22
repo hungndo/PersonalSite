@@ -8,8 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>My Name</h1>
-        <p>My Professional Title</p>
+        <div class="profile-image-container">
+            <img src="{{ url_for('static', filename='resources/profile_image.jpg') }}" alt="Profile Photo" class="profile-image">
+        </div>
+        <h1>Hung Do</h1>
+        <p>Data Scientist | Statistician | Machine Learning Engineer</p>
     </header>
 
     <nav>
