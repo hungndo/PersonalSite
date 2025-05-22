@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Technical stack
+
+- Python for the backend, use Flask.
+- html/js/css for the frontend
+- Python tests
+
+Note: always ask me to confirm whenever you want to use a techstack not listed here

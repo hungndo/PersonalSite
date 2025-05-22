@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>My Name</h1>
+        <p>My Professional Title</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="{{ url_for('download_resume') }}">Download Resume</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Placeholder for About Me section. You can describe yourself here.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Placeholder for Experience section. Detail your work experience here.</p>
+        <!-- Add more experience items as needed -->
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Placeholder for Education section. List your educational background here.</p>
+        <!-- Add more education items as needed -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Placeholder for Skills section. Showcase your skills here.</p>
+        <!-- Add more skills as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Name. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
